@@ -1,2 +1,6 @@
 # Movies-Website
-Web application based on client/server architecture. Technologies: NodeJS with relative packages (npm, express)
+Web application based on client/server architecture.
+Technologies: NodeJS
+Packages: npm, express
+Front end: HTML
+Back end: JavaScript
