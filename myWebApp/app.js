@@ -44,16 +44,14 @@ app.use(function (err, req, res, next) {
 //module.exports = app;
 
 app.get("/", function (req, res) {
-  res.render("index", { title: "express" });
+  res.render("login");
 });
-app.get("/home", function (req, res) {
-  res.render("homepage");
-});
-app.post("/homepage", function (req, res) {
-  var userName = req.body.userName;
-  var passWord = req.body.passWord;
-  console.log(userName);
-  console.log(passWord);
-});
+
+// app.post("/login", function (req, res) {
+//   var userName = req.body.userName;
+//   var passWord = req.body.password;
+//   console.log(userName);
+//   console.log(passWord);
+// });
 
 app.listen(3000);
