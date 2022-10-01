@@ -43,9 +43,9 @@ app.use(function (err, req, res, next) {
 
 //module.exports = app;
 
-app.get("/", function (req, res) {
-  res.render("login");
-});
+// app.get("/", function (req, res) {
+//   res.render("login");
+// });
 
 // app.post("/login", function (req, res) {
 //   var userName = req.body.userName;
