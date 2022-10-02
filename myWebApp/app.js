@@ -22,7 +22,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-
 // catch 404 and forward to error handler
 /*
 app.use(function (req, res, next) {
@@ -46,7 +45,6 @@ app.use(function (err, req, res, next) {
 // app.get("/", function (req, res) {
 //   res.render("login");
 // });
-
 // app.post("/login", function (req, res) {
 //   var userName = req.body.userName;
 //   var passWord = req.body.password;

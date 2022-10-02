@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url("/images/moviesBackground1.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px blue;
+        }
+        .cont{
+            color: white;
+            position: relative;
+            left: 600px;
+            top: 50px;
+            -webkit-text-stroke: 0.5px black;
+        }
+        .container1{
+            color: white;
+            position: fixed;
+            left: 370px;
+            top: 250px;
+        }
+        .container2{
+            color: white;
+            position: fixed;
+            left: 670px;
+            top: 250px;
+        }
+        .container3{
+            color: white;
+            position: fixed;
+            left: 970px;
+            top: 250px;
+        }
+        #label1{
+            position: relative;
+            right: -15px;
+        }
+        #label2{
+            position: relative;
+            right: 0px;
+        }
+        #divergent, hitman, snitch{
+            position: relative;
+            left: 50px;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXcbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+        <a class="navbar-brand" style="color: rgb(191,255,161);">Movies</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div>
+            <ul class="navbar-nav mr-auto"></ul>
+            <form method="post" action="/search" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" name="Search" placeholder="Search movies here" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container1">
+        <img id="image" src="/images/hitman.jpeg" alt="hitmanImg" width="100" height="100">
+        <br>
+        <label class="ml-4 my-2">The Hitman's Bodyguard</label>
+        <br>
+        <button onclick=" location.href='/hitman'; " class="btn btn-secondary ml-3" id="hitman" >View</button>
+    </div>
+    <div class="container2">
+        <img id="image" src="/images/snitch.jpeg" alt="snitchImg" width="100" height="100">
+        <br>
+        <label class="ml-4 my-2">Snitch</label>
+        <br>
+        <button onclick=" location.href='/snitch'; " class="btn btn-secondary ml-3" id="snitch" >View</button>
+    </div>
+    <div class="container3">
+        <img id="image" src="/images/divergent.jpeg" alt="divergentImg" width="100" height="100">
+        <br>
+        <label class="ml-4 my-2">Divergent</label>
+        <br>
+        <button onclick=" location.href='/divergent'; " class="btn btn-secondary ml-3" id="divergent" >View</button>
+    </div>
+</body>
+</html>

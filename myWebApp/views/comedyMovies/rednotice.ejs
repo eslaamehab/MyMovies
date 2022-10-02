@@ -3,7 +3,7 @@
 <head>
     <style>
         body {
-            background-image: url("/images/homePageBackground.jpeg");
+            background-image: url("/images/moviesBackground1.jpeg");
             background-repeat: no-repeat;
             background-size: 100%;
         }
@@ -12,42 +12,37 @@
             text-align: center;
             -webkit-text-stroke: 1px blue;
         }
-        .cont{
-            color: white;
-            position: relative;
-            left: 600px;
-            top: 50px;
-            -webkit-text-stroke: 0.5px black;
-        }
         .container1{
             color: white;
             position: fixed;
-            left: 100px;
-            top: 250px;
+            left: 870px;
+            top: 190px;
         }
         .container2{
             color: white;
             position: fixed;
-            left: 400px;
+            left: 505px;
             top: 250px;
-        }
-        .container3{
-            color: white;
-            position: fixed;
-            left: 750px;
-            top: 250px;
+            text-align: justify;
+            text-justify: inter-word;
+            width: 300px;
+            border: 3px solid yellow;
+            padding: 20px;
         }
         .watchlist{
             position: fixed;
-            left: 100px;
+            left: 900px;
             top: 500px;
+        }
+        #my{
+            zoom: 110%;
         }
     </style>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Red Notice</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXcbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -67,34 +62,18 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h1>Welcome to our movie store<br><br>Pick your favourite category</h1>
-    </div>
     <div class="container1">
-        <img id="image" src="/images/actionBackground.jpeg" alt="actionImg" width="100" height="100">
-        <br>
-        <label class="ml-4 my-2">Action</label>
-        <br>
-        <button onclick=" location.href='/action'; " class="btn btn-secondary ml-3" id="action" >View</button>
+        <img id="image" src="/images/rednotice.jpeg" alt="rednoticeImg" width="190" height="300">
     </div>
     <div class="container2">
-        <img id="image" src="/images/comedyBackground.jpeg" alt="comedyImg" width="100" height="100">
-        <br>
-        <label class="ml-4 my-2">Comedy</label>
-        <br>
-        <button onclick=" location.href='/comedy'; " class="btn btn-secondary ml-3" id="comedy" >View</button>
-    </div>
-    <div class="container3">
-        <img id="image" src="/images/romanceBackground.jpeg" alt="romanceImg" width="100" height="100">
-        <br>
-        <label class="ml-4 my-2">Romance</label>
-        <br>
-        <button onclick=" location.href='/romance'; " class="btn btn-secondary ml-3" id="romance" >View</button>
+        Trailer: <br><br>
+        In the world of international crime, an Interpol agent attempts to hunt down and capture the world's most wanted art thief.
     </div>
     <div class="watchlist">
-        <button onclick=" location.href='/readlist'; " id="readlist" class="btn btn-secondary ml-3" style="width: 300px;">
-            My Watchlist
-        </button>
+        <button id="watchlist" class="btn btn-secondary ml-3">Add to watch list</button>
+    </div>
+    <div class="video">
+        <video src="rednotice.mp4" width="480" height="360" controls></video>
     </div>
 </body>
 </html>

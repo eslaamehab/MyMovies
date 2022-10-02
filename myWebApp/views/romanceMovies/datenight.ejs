@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url("/images/moviesBackground1.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px blue;
+        }
+        .container1{
+            color: white;
+            position: fixed;
+            left: 870px;
+            top: 190px;
+        }
+        .container2{
+            color: white;
+            position: fixed;
+            left: 505px;
+            top: 250px;
+            text-align: justify;
+            text-justify: inter-word;
+            width: 300px;
+            border: 3px solid yellow;
+            padding: 20px;
+        }
+        .watchlist{
+            position: fixed;
+            left: 900px;
+            top: 500px;
+        }
+        #my{
+            zoom: 110%;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Night</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXcbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+        <a class="navbar-brand" style="color: rgb(191,255,161);">Movies</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div>
+            <ul class="navbar-nav mr-auto"></ul>
+            <form method="post" action="/search" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" name="Search" placeholder="Search movies here" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container1">
+        <img id="image" src="/images/datenight.jpeg" alt="datenightImg" width="190" height="300">
+    </div>
+    <div class="container2">
+        Trailer: <br><br>
+        Worried that the spark has gone from their marriage, Phil and Claire Foster plan a romantic night out at a hip Manhattan eatery. When they arrive, however, the restaurant is heaving, and, without a reservation, Phil impulsively claims they are absent diners the Tripplehorns. The ploy seems to have worked, until two heavies interrupt their meal demanding the return of a stolen flash drive.
+    </div>
+    <div class="watchlist">
+        <button id="watchlist" class="btn btn-secondary ml-3">Add to watch list</button>
+    </div>
+    <div class="video">
+        <video src="datenight.mp4" width="480" height="360" controls></video>
+    </div>
+</body>
+</html>
