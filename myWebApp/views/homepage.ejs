@@ -1,18 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Movie - Home</title>
-</head>
+    <style>
+        body {
+            background-image: url("/images/homePageBackground.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px blue;
+        }
+        .cont{
+            color: white;
+            position: relative;
+            left: 600px;
+            top: 50px;
+            -webkit-text-stroke: 0.5px black;
+        }
+        .container1{
+            color: white;
+            position: fixed;
+            left: 100px;
+            top: 250px;
+        }
+        .container2{
+            color: white;
+            position: fixed;
+            left: 400px;
+            top: 250px;
+        }
+        .container3{
+            color: white;
+            position: fixed;
+            left: 750px;
+            top: 250px;
+        }
+        .watchlist{
+            position: fixed;
+            left: 100px;
+            top: 500px;
+        }
+    </style>
 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXcbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 <body>
-    <h1>Welcome to the home page</h1>
-    <h2>Here you will find all the movies you like</h2>
-    <h3>sign to to make this happen</h3>
-    <form>
-        <input type="text" name="userName">
-        <input type="password" name="passWord">
-        <input type="submit" value="Login">
-    </form>
-    <img src="/images/Hesho.jpg", alt="">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+        <a class="navbar-brand" style="color: rgb(191,255,161);">Movies</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div>
+            <ul class="navbar-nav mr-auto"></ul>
+            <form method="post" action="/search" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" name="Search" placeholder="Search movies here" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to our movie store<br><br>Pick your favourite category</h1>
+    </div>
+    <div class="container1">
+        <img id="image" src="/images/actionBackground.jpeg" alt="actionImg" width="100" height="100">
+        <br>
+        <label class="ml-4 my-2">Action</label>
+        <br>
+        <button onclick=" location.href='/action'; " class="btn btn-secondary ml-3" id="action" >View</button>
+    </div>
+    <div class="container2">
+        <img id="image" src="/images/comedyBackground.jpeg" alt="comedyImg" width="100" height="100">
+        <br>
+        <label class="ml-4 my-2">Comedy</label>
+        <br>
+        <button onclick=" location.href='/comedy'; " class="btn btn-secondary ml-3" id="comedy" >View</button>
+    </div>
+    <div class="container3">
+        <img id="image" src="/images/romanceBackground.jpeg" alt="romanceImg" width="100" height="100">
+        <br>
+        <label class="ml-4 my-2">Romance</label>
+        <br>
+        <button onclick=" location.href='/romance'; " class="btn btn-secondary ml-3" id="romance" >View</button>
+    </div>
+    <div class="watchlist">
+        <button onclick=" location.href='/readlist'; " id="readlist" class="btn btn-secondary ml-3" style="width: 300px;">
+            My Watchlist
+        </button>
+    </div>
 </body>
 </html>
