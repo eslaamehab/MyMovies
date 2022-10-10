@@ -1,0 +1,12 @@
+<h1>Search Actors</h1>
+<form action="/api/actors" , method="get">
+  <label>Name</label>
+  <input type="text" , name="name" , value="<%=searchBox.name%>" />
+  <button type="submit">Search</button>
+</form>
+<br />
+<br />
+<br />
+<% actors.forEach(actor => { %>
+<div><%= actor.name %></div>
+<% }) %>
